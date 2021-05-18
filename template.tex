@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Copyright 2015 Idafen Santana, Mar’a Poveda
+%Copyright 2015 Idafen Santana, Marï¿½a Poveda
 %
 %Licensed under the Apache License, Version 2.0 (the "License");
 %you may not use this file except in compliance with the License.
@@ -33,76 +33,79 @@
 \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{A0A0A0}\textbf{WICUS Ontology Requirements Specification Document}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{1. Purpose}}                                                                                                                                                                                                                                                         \\ \hline
-\multicolumn{8}{| p{14.0cm} |}{Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem...}                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{| p{14.0cm} |}{The purpose of this ontology is to represent entities involved in the DPIA to
+support encoding of the DPIA-related obligations mandated by GDPR and different Data Protection Authorities (DPAs).}                                                                                                                                                                                                                                                      \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{2. Scope}}                                                                                                                                                                                                                                                         \\ \hline
-\multicolumn{8}{| p{14.0cm} |}{Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem...}                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{| p{14.0cm} |}{The scope of this ontology is limited to the definition of the entities necessary to validate the competence of the whole DPIA process. This includes: \newline
+1.To decide whether a DPIA is required for a specific processing operation.\newline
+2.To decide whether a DPIA is complete in terms of the information it should contain. If not, what are the necessary actions to comply with the Regulation (for example, prior consultation with the DPAs)? }                                                                                                                                                                                                                                                      \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{3. Implementation Language}}                                                                                                                                                                                                                                                         \\ \hline
-\multicolumn{8}{| p{14.0cm} |}{Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem...}                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{8}{| p{14.0cm} |}{OWL}                                                                                                                                                                                                                                                      \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{4. Intended End-Users}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{
-User 1. Description of the user... \newline 
-User 2. Description of the user... \newline 
-User 3. Description of the user...  
+User 1. Compliance tools: Any tool works based on the Semantic Technologies. \newline
+User 2. Data controllers: Companies and organizations collecting personal data of their users can use this ontology to better conduct a DPIA for a new project or processing operation(s). \newline
 }                                                                                                                                                                                                                                                      \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{5. Intended Uses}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{
-Use 1. Description of the use... \newline 
-Use 2. Description of the use... \newline 
-Use 3. Description of the use...  
+Use 1. Declaration of the DPIA-related obligations imposed by GDPR or DPA's guidelines.\newline
+Use 2. Representation of the DPIA related information and activities provided/performed by data controllers.\newline
+Use 3. Supporting compliance validation in \textit{ex-ante} or \textit{ex-post} stage.
+% Use 2. Compliance validation: Having a machine-readable representation of the planned processing activity, the DPIA document, and the rules related to the DPIA, a compliance tool can reason over the provided information and assess compliance/violation. \newline
+% Use 3. Advising  \newline
+% Use 4. Description of the use...
 }                                                                                                                                                                                                                                                      \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{6. Ontology Requirements}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{a. Non-Functional  Requirements}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{
-NFR 1. Description of the requirement... \newline 
-NFR 2. Description of the requirement... \newline 
-NFR 3. Description of the requirement...  }                                                                                                                                                                                                                                                      \\ \hline
+NFR 1. The ontology will be made available online to the community following the FAIR principles.\newline  }                                                                                                                                                                                                                                                      \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{b. Functional  Requirements: Groups of Competency Questions}}                                                                                                                                                                                                                                                         \\ \hline
 \multicolumn{4}{|c|}{\cellcolor[HTML]{EFEFEF}CQG1. XXXX}                    & \multicolumn{4}{c|}{\cellcolor[HTML]{EFEFEF}CQG2. YYYY}    \\ \hline
 
 \multicolumn{4}{ | m{6.8cm} |}{
-CQ1. Competency question 1 \newline 
-CQ2. Competency question 2 \newline 
-CQ3. Competency question 3}	    & 
+CQ1. Competency question 1 \newline
+CQ2. Competency question 2 \newline
+CQ3. Competency question 3}	    &
 
 \multicolumn{4}{ m{6.8cm} |}{
-CQ4. Competency question 5 \newline 
-CQ5. Competency question 6 \newline 
+CQ4. Competency question 5 \newline
+CQ5. Competency question 6 \newline
 CQ6. Competency question 7}			\\ \hline
 
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{7. Pre-Glossary of Terms}}                                                                                                                                                                                                                                                     \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{a. Terms from Competency Questions + Frequency}}                                                                                                                                                                                                                                                     \\ \hline
 \multicolumn{1}{ | m{3.15cm} | }{
-Term1 Freq1 \newline 
-Term2 Freq2  
-}	& 
+Term1 Freq1 \newline
+Term2 Freq2
+}	&
 \multicolumn{1}{ m{3.15cm} | }{
-Term3 Freq3 \newline 
-Term4 Freq4 
+Term3 Freq3 \newline
+Term4 Freq4
 }      &
 \multicolumn{1}{ m{3.15cm} | }{
-Term5 Freq5 \newline 
-Term6 Freq6 } & 
+Term5 Freq5 \newline
+Term6 Freq6 } &
 \multicolumn{5}{ m{3.15cm} | }{
-Term7 Freq7 \newline 
-Term8 Freq8 
-}        
+Term7 Freq7 \newline
+Term8 Freq8
+}
 \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{b. Terms from Answers + Frequency}}                                                                                                                                                                                                                                                     \\ \hline
 \multicolumn{1}{ | m{3.15cm} | }{
-Term1 Freq1 \newline 
-Term2 Freq2  
-}	& 
+Term1 Freq1 \newline
+Term2 Freq2
+}	&
 \multicolumn{1}{ m{3.15cm} | }{
-Term3 Freq3 \newline 
-Term4 Freq4 
+Term3 Freq3 \newline
+Term4 Freq4
 }      &
 \multicolumn{1}{ m{3.15cm} | }{
-Term5 Freq5 \newline 
-Term6 Freq6 } & 
+Term5 Freq5 \newline
+Term6 Freq6 } &
 \multicolumn{5}{ m{3.15cm} | }{
-Term7 Freq7 \newline 
-Term8 Freq8 
-}       
+Term7 Freq7 \newline
+Term8 Freq8
+}
 \\ \hline
 \multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{c. Objects}}                                                                                                                                                                                                                                                     \\ \hline
 \multicolumn{8}{| p{14.0cm} |}{Object 1, Object 2, Object 3, Object 4, Object 5, ...}                                                                                                                                                                                                                                                      \\ \hline
