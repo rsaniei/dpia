@@ -16,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/template.tex">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="568">
-              <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+              <caret line="119" column="14" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -99,7 +99,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-104" y="23" width="1280" height="729" extended-state="0" />
+    <frame x="76" y="23" width="1280" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
@@ -125,7 +125,7 @@
     <entry file="file://$PROJECT_DIR$/template.tex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
-          <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+          <caret line="119" column="14" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="14" />
         </state>
       </provider>
     </entry>
