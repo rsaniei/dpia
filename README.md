@@ -1,3 +1,3 @@
-# ORSD-template
+# DPIA Ontology
 
-This file contains a LaTeX template for defining the [Ontology Requirements Specification (ORSD)](http://www.neon-project.org/web-content/media/book-chapters/Chapter-05.pdf) file, as specified by the [NeOn Methodology](http://mayor2.dia.fi.upm.es/oeg-upm/index.php/en/methodologies/59-neon-methodology).
+This ontology supports the representation of concepts necessary to decide whether a processing activity is of type "high risk" to the rights and freedom of individuals and thus, need a Data Protection Impact Assessment.
