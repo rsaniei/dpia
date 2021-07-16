@@ -1,3 +1,3 @@
-# dpia
+# ORSD-template
 
-This repository contains an ontology for representing the entities involved in a Data Protection Impact Assessment (DPIA) under the General Data Protection Regulation (GDPR). This ontology is used to encode the necessary rules related to the DPIA, together with the Open Digital Rights Language (ODRL) and Data Privacy Vocabulary (DPV).
+This file contains a LaTeX template for defining the [Ontology Requirements Specification (ORSD)](http://www.neon-project.org/web-content/media/book-chapters/Chapter-05.pdf) file, as specified by the [NeOn Methodology](http://mayor2.dia.fi.upm.es/oeg-upm/index.php/en/methodologies/59-neon-methodology).
