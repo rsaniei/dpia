@@ -49,6 +49,35 @@
     .head a:hover>img[src*='ogc'] {
       opacity: 0.8;
     }
+
+    .table-top {
+      background-color: grey;
+      text-align: center;
+      border-width: 5px;
+      color: white;
+      font-size: 15px;
+      border-width: 2px;
+      border-color: black;
+      border-style: solid;
+
+    }
+
+    .table-title {
+      background-color: rgba(128, 128, 128, 0.712);
+      text-align: center;
+      border-width: 5px;
+      color: white;
+      font-size: 14px;
+      border-width: 2px;
+      border-color: black;
+      border-style: solid;
+    }
+
+    .table-cell {
+      font-size: 13px;
+      border-style: solid;
+
+    }
   </style>
 </head>
 
@@ -159,7 +188,241 @@
       characteristics of the processing operations which should be considered to assess the risk level of operations.
 
     </p>
+    <!-- ORSD Table -->
+    <section id="orsdtable">
+      <h3 id="orsdtable">
+        <bdi class="secno"></bdi>Ontology Requirement Specification Document
+        <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#orsdtable"></a>
+      </h3>
 
+      <table class="center">
+        <tr>
+          <th colspan=2 class="table-top">
+            Data Protection Impact Assessment Ontology
+          </th>
+        </tr>
+        <tr>
+          <th colspan=2 class="table-title">
+            1. Purpose
+          </th>
+        </tr>
+        <tr>
+          <td colspan=2 class="table-cell">
+            The purpose of the ontology is to support determining whether a processing activity/ project
+            is of type <emf>high-risk</emf> to the rights and freedom of individuals, by representing the concepts
+            required to make the inference.
+          </td>
+        </tr>
+        <tr>
+          <th colspan=2 class="table-title">
+            2. Scope
+          </th>
+        </tr>
+        <tr>
+          <td colspan=2 class="table-cell">
+            The scope of this ontology is limited to the identification of concepts mentioned in the European GDPR for
+            reaching the abovementioned purpose.
+            Other guidelines which give further explanations of GDPR Articles, such as WP29 guideline on DPIA [], as
+            well as variouse case laws and DPAs decisions, have been
+            considered in this work.
+          </td>
+        </tr>
+        <tr>
+          <th colspan=2 class="table-title">
+            3. Implementation Language
+          </th>
+        </tr>
+        <tr>
+          <td colspan=2 class="table-cell">
+            OWL
+          </td>
+        </tr>
+        <tr>
+          <th colspan=2 class="table-title">
+            4. Intended End-Users
+          </th>
+        </tr>
+        <tr>
+          <td colspan=2 class="table-cell">
+            1. Developers of applications supporting DPIA<br>
+            2. Data controllers collecting personal data, or in particular, Data Protection Officers (DPO).
+          </td>
+        </tr>
+        <tr>
+          <th colspan=2 class="table-title">
+            5. Intended Uses
+          </th>
+        </tr>
+        <tr>
+          <td colspan=2 class="table-cell">
+            1. Identification of high-risk processing avtivities/projects.<br>
+            2. Understanding whether a DPIA is necessary for a processing avtivity/project. <br>
+            3. Development of wizard tools/ applications assisting data controllers to detect processing operations with
+            high risk.
+          </td>
+        </tr>
+        <tr>
+          <th colspan=2 class="table-title">
+            6. Ontology Requirements
+          </th>
+        </tr>
+        <tr>
+          <th colspan=2 class="table-title">
+            a. Non-Functional Requirements
+          </th>
+        </tr>
+        <tr>
+          <td colspan=2 class="table-cell">
+            NFR 1. The ontology should be published online, following the FAIR principle[].
+          </td>
+        </tr>
+        <tr>
+          <th colspan=2 class="table-title">
+            b. Functional Requirements: Competency Questions
+          </th>
+        </tr>
+        <tr>
+          <th class="table-title">
+            CQG1. Scale of Processing Activity
+          </th>
+        </tr>
+        <tr>
+          <td class="table-cell">
+            CQ1. What is the scale of the processing activity?<br>
+            CQ1.1. What is the scale of data subject affected by the processing activity?<br>
+            CQ1.2. What is the scale of personal data assoiciated with the processing activity?<br>
+            CQ1.3. How many ranges of personal data items are going to be processed?<br>
+            CQ1.4. What is the geographical extent of the processing activity?<br>
+            CQ1.5. What is the frequency of the processing activity?<br>
+            CQ1.6. For how long the processing activity last?
+          </td>
+        </tr>
+        <tr>
+          <th class="table-title">
+            CQG2. Processing of Sensitive Data
+          </th>
+        </tr>
+        <tr>
+          <td class="table-cell">
+            CQ2. What is the category of personal data used in the processing operation?<br>
+            CQ2.1. Does processing operation contain special categories of data listed in GDPR Art. 9?<br>
+            CQ2.2. Does processing operation contain processing of personal data relating to criminal convictions and
+            offences (Art. 10)?<br>
+            CQ2.3. Does processing contain other types of personal data which have highly personal nature (such as
+            electronic, communications, locations, etc.)?<br>
+          </td>
+        </tr>
+        <tr>
+          <th class="table-title">
+            CQG3. Data Concerning Vulnerable Data subjects
+          </th>
+        </tr>
+        <tr>
+          <td class="table-cell">
+            CQ3. Who are the data subjects affected by the processing activity?<br>
+            CQ3.1. Does the processing activity target any vulnerable data subject?<br>
+            CQ3.2.What is the relationship between data controller and data subject?<br>
+            CQ3.3. Considering the purpose of the processing, is there any increased power imbalance between the data
+            controller and data
+            subjects?<br>
+            CQ3.4. Are data subjects unable of easily give consent to, or oppose the processing of their data, or
+            exercise their right
+            (children, etc.)?<br>
+            CQ3.5. Do data subjects need special protection (mentally ill persons, asylum seekers, the elderly,
+            patients)?
+          </td>
+        </tr>
+        <tr>
+          <th class="table-title">
+            CQG4. Use of New and Innovative Technology and Organizational Solution
+          </th>
+        </tr>
+        <tr>
+          <td class="table-cell">
+            CQ4. What type of technology or organizational solutions do you use in your processing operation?<br>
+            CQ4.1. Do you use <emf>innovatively</emf> different technology or organizational solutions in your
+            processing operation?<br>
+            CQ4.2. Do you use </emf>new technological</emf> or organizational solutions in your processing
+            operation?<br>
+          </td>
+        </tr>
+        <tr>
+          <th class="table-title">
+            CQG5. Automated-decision making with legal or similar significant effect
+          </th>
+        </tr>
+        <tr>
+          <td class="table-cell">
+            CQ5. Does the processing include any automated-decision making with legal or similar significant effect on
+            individuals?<br>
+            CQ5.1. Is personal data processed for making a decision?<br>
+            CQ5.2. Does the processing operation involve some form of automation?<br>
+            CQ5.3. Does any human involve in the processing activity?<br>
+            CQ5.3.1. If the answer to CQ8.3 is yes, what is the influence of the human ont the result?<br>
+            (does the person have the authority or competence to change the generated result/ have an actual influence
+            on the
+            result?)<br>
+            CQ5.3.2. If the answer to CQ8.3 is yes, at what stage of the decison making process the human involves?<br>
+            CQ5.4 What is the impact of processing on the individuals?<br>
+            CQ5.4.1. What is the legal impact of processing on the individuals?<br>
+            CQ5.4.1.1. What is the effect of processing on the individuals' legal rights?<br>
+            CQ5.4.1.2. What is the effect of processing on the individuals legal status?
+            CQ5.4.1.3. What is the effect of peocessing on the individuals right under a contract?
+            CQ5.4.2. What are the similarly significant effects of the processing on individuals?
+          </td>
+        </tr>
+        <tr>
+          <th class="table-title">
+            CQG6. Systematic Monitoring
+          </th>
+        </tr>
+        <tr>
+          <td class="table-cell">
+            CQ6. Does the processing activity include any systematic monitoring of data subjects?<br>
+            CQ6.1. the processing activity include any monitoring of data subjects? <br>
+            CQ6.1.2. Does processing activity include observing, monitoring, controlling, or tracking data subjects on
+            the inernet? <br>
+            CQ6.1.3. Does the processing operation include tracking or monitoring individuals in publicly accessible
+            area?
+            CQ6.1.4. What is the effect of peocessing on the individuals right under a contract?
+            CQ6.2. If the answer to CQ.1. is yes, is the monitoring conducted in a <emf>systematic</emf> manner?
+            CQ6.2.1. Is the monitoring part of a general plan for the data collection phase?
+            CQ6.2.2. *Does the monitoring occur according to a system?
+            CQ6.2.3. *Is it a pre-arranged, organised or methodical monitoring?
+            CQ.2.4. *Does the monitoring taking place as part of a strategy?
+
+          </td>
+        </tr>
+        <tr>
+          <th class="table-title">
+            CQG7. Matching or Combining Datasets
+          </th>
+        </tr>
+        <tr>
+          <td class="table-cell">
+            CQ7. Does data originate from two or more data processing operations performed for different purposes and/or
+            by
+            different data controllers in a way that would exceed the reasonable expectations of the data subject?"<br>
+            CQ7.1. What is the origin/source of the dataset used for data processing?<br>
+            CQ7.2. If data is the result of a processing operation, what is the purpose for it?<br>
+            CQ7.3. Who is the data controller/processor generated/collected the data?
+          </td>
+        </tr>
+
+        <tr>
+          <th class="table-title">
+            CQG8. Evaluation or Scoring
+          </th>
+        </tr>
+        <tr>
+          <td class="table-cell">
+            CQ8.1.
+
+          </td>
+        </tr>
+      </table>
+    </section>
+    <!-- ORSD Table -->
   </section>
   <section id="Namespaces">
     <h2>Namespaces</h2>
