@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Risk Assessment Vocabulary</title>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+  <script class="remove">
+    var respecConfig = {
+      // shortName: "",
+      // title: "",
+      subtitle: "version 0.1",
+      edDraftURI: "https://w3.org/ns/dpia",
+      github: {
+        repoURL: "https://github.com/rsaniei/dpia",
+        branch: "main"
+      },
+      // subjectPrefix: "[]",
+      editors: [{
+        "name": "Rana Saniei",
+        "url": "https://protect-network.eu/people/rana-saniei-esr9/",
+        "company": "Ontology Engineering Group, Universidad Politécnica de Madrid",
+        "companyURL": "https://oeg.fi.upm.es/",
+        "mailto": "r.sanieis@upm.es"
+      },
+      {
+        "name": "Harshvardhan J. Pandit",
+        "url": "https://harshp.com/",
+        "company": "ADAPT Centre, Trinity College Dublin",
+        "companyURL": "https://tcd.ie/",
+        "mailto": "pandith@tcd.ie"
+      },
+      {
+        "name": "Víctor Rodríguez-Doncel",
+        "url": "http://cosasbuenas.es/",
+        "company": "Ontology Engineering Group, Universidad Politécnica de Madrid",
+        "companyURL": "https://oeg.fi.upm.es/",
+        "mailto": "vrodriguez@fi.upm.es"
+      }
+      ],
+
+    };
+  </script>
+  <style type="text/css">
+    .indent {
+      margin-left: 40px;
+    }
+
+    .head a:hover>img[src*='ogc'] {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="abstract">
+    <p>This is required.</p>
+  </section>
+  <section id="sotd">
+    <p>This is required.</p>
+  </section>
+  <section class="informative">
+    <h2>Introduction</h2>
+    <!-- <h2 id="x2-introduction"> -->
+    <!-- <bdi class="secno">2. </bdi>Introduction -->
+    <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/dpia/main.html#intro"></a>
+    </h2>
+    <p>
+      One of the novelties of the European General Data Protection Regulation (GDPR) for regulating data controllers is
+      the requirement of taking a <em>risk-based</em> approach in the processing of personal data; which means data
+      controllers
+      should consider the risks of their projects or processing activity <em>proactively</em> to prevent, as much as
+      possible, causing any
+      harm to individuals. The envisaged tool in the GDPR for this goal is Data Protection Impact Assessment (DPIA).
+      DPIA is
+      required to assess and manage the risks of any project or processing activity likely to result in a high risk to
+      the rights and freedoms of natural persons. It is not only valuable for building compliance in the organizations
+      but also to demonstrate it. In this sense, it can be considered a vital tool for following the Regulation's
+      accountability
+      principle.
+    </p>
+    <p>
+
+      The main objective of this vocabulary is to support the first step before starting a complete DPIA, which is to
+      decide whether a
+      full DPIA is needed for a specific project or processing activity according to GDPR or not. Art. 35(1) ties in the
+      necessity of DPIA with the risk level of the processing activity: if the activity is likely to pose high risk to
+      the rights and freedoms of individuals, then a DPIA is required. Hence, it can be inferred that the main objective
+      here is to decide whether the processing activity is of type high risk or not. This decision is critical and
+      should be
+      performed accurately as the fault decision of skipping the risk assessment when it is essential may lead to
+      adverse
+      consequences.
+    </p>
+    <p>
+      GDPR, Art. 35(3) lists three cases in which a DPIA is particularly mandatory:
+    </p>
+    <p class="indent">
+      1. A systematic and extensive evaluation of personal aspects relating to natural persons which is based on
+      automated
+      processing, including profiling, and on which decisions are based that produce legal effects concerning the
+      natural
+      person or similarly significantly affect the natural person
+    </p>
+    <p class="indent">
+      2. Processing on a large scale of special categories of data referred to in Article 9(1), or of personal data
+      relating
+      to
+      criminal convictions and offences referred to in Article 10.
+    </p>
+    <p class="indent">
+      3. A systematic monitoring of a publicly accessible area on a large scale.
+    </p>
+    <p>
+      Furthermore, based on GDPR Art.35(1), (3) and Recitals 71, 75, 76, 91, 92 and 116, Article 29 Working Party’s
+      guideline
+      on DPIA provides a more detailed list of the processing operations that need a DPIA. This list contains nine
+      criteria:
+      1) <em>Evaluation or Scoring</em>, 2) <em>Automated decision making with legal or similar significant effect</em>,
+      3)
+      <em>Systematic
+        monitoring</em>, 4) <em>Sensitive data or data of a highly personal nature</em>, 5) <em>Data processed on a
+        large scale</em>, 6) <em>Matching
+        or
+        combining datasets</em>, 7) <em>Data concerning vulnerable data subjects</em>, 8) <em>Innovative use or applying
+        new technological
+        or
+        organizational solutions</em>, and 9) <em>Processing preventing data subjects from exercising a right or using a
+        service or
+        contract</em>.
+    </p>
+    <p>
+      Understanding if any of these nine criteria applies to the processing operation is not always straightforward for
+      data
+      controllers as it is needed to interpret and further explain each of them.
+      As an example, consider the condition which indicates if the data is processed on a large scale, then a DPIA may
+      be
+      needed. Here, the first and main question of a data controller <em>would be when a processing operation is
+        considered as
+        large scale?</em> GDPR gives no complete information of what constitutes large-scale. The
+      WP29 Guidelines on Data Protection Officer, however, defines four conditions for this criterion: when a large
+      <em>number</em>
+      of data subjects are involved, when large <em>volume/ range</em> of data is processed, when processing continues
+      for large
+      <em>duration</em>, and finally, when large <em>geographical extent</em> is affected.
+    </p>
+    <p>Deciding about the
+      applicability of some of
+      the other criteria in this list, however, is not that straightforward. For instance, determining whether a
+      <em>new</em> technology or organizational
+      measure is used in the processing activity, or whether a data controller uses a technology in an
+      <em>innovative</em> way is
+      challenging and depends on the interpretation of these terms.
+      This vocabulary aims to assist data controllers in better understanding the riskiness of their processing
+      operations by
+      investigating the elements of information that need to be considered for this purpose and modelling them using
+      Semantic
+      Web technologies. More specifically, the ontology represents the aspects and
+      characteristics of the processing operations which should be considered to assess the risk level of operations.
+
+    </p>
+
+  </section>
+  <section id="Namespaces">
+    <h2>Namespaces</h2>
+
+    <table class="def">
+      <tbody>
+        <tr>
+          <th>Prefix</th>
+          <th>Namespace</th>
+        </tr>
+        <tr>
+          <td>rdf</td>
+          <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td>
+        </tr>
+        <tr>
+          <td>rdfs</td>
+          <td>http://www.w3.org/2000/01/rdf-schema#</td>
+        </tr>
+        <tr>
+          <td>owl</td>
+          <td>http://www.w3.org/2002/07/owl#</td>
+        </tr>
+        <tr>
+          <td>dct</td>
+          <td>http://purl.org/dc/terms/</td>
+        </tr>
+        <tr>
+          <td>ns1</td>
+          <td>http://purl.org/vocab/vann/</td>
+        </tr>
+        <tr>
+          <td>xsd</td>
+          <td>http://www.w3.org/2001/XMLSchema#</td>
+        </tr>
+        <td>dpv</td>
+        <td>http://www.w3.org/ns/dpv#</td>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+  </section>
+
+  <!-- <section id="conformance">
+    <p>
+      This is required for specifications that contain normative material.
+    </p>
+  </section> -->
+  <section id="specs">
+    <h2 id="spec">
+      <bdi class="secno"></bdi>Specification
+      <a class="self-link" aria-label="§" href=""></a>
+    </h2>
+    <p>
+      In this section, the classes and properties for representation of each of the
+      nine criteria mentioned earlier, are listed.
+    </p>
+    <section id="Largescale">
+      <h3 id="largescale1">
+        <bdi class="secno"></bdi>Large-scale processing
+        <a class="self-link" aria-label="§" href=""></a>
+      </h3>
+      <p>WP29 guideline on DPIA mention the <em>scale</em> of the processing as a determinant criterion in
+        understanding the risk level of processing operations. It recommends the following factors to be considered
+        when determining whether the processing is conducted on a large scale:</p>
+      <p class="indent">
+        1. the number of data subjects concerned, either as a specific number or as a proportion of the relevant
+        population
+      </p>
+      <p class="indent">
+        2. the volume of data and/or the range of different data items being processed
+      </p>
+      <p class="indent">
+        3. the duration, or permanence, of the data processing activity
+      </p>
+      <p class="indent">
+        4. the geographical extent of the processing activity
+      </p>
+      <p>Accordingly, the following classes and properties are defined to represent the concepts indicated in the
+        guideline.</p>
+      <section id="diagram">
+        <h3 id="diagram">
+          <bdi class="secno"> </bdi>Diagram
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#diagram"></a>
+        </h3>
+
+        <p>
+          Concepts associated with the scale of processing activities are represented below:
+        </p>
+        <center>
+          <img src="scale.png" alt="Concepts associated with Scale of Processing Activities" width="700px">
+        </center>
+        </div>
+      </section>
+      <section id="affectsDSScale">
+        <h3 id="1-affectsDSScale">
+          <bdi class="secno"> </bdi>processing Affects Scale of Data Subject
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-affectsDSScale"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Property to associate processing activity to the scale of affected data subjects</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:processingAffectsScaleOfDataSubject</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="affectsDataVolume">
+        <h3 id="1-affectsDataVolume">
+          <bdi class="secno"> </bdi>processing Affects PersonalData Volume
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-affectsDataVolume"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Property to associate processing activity to the volume of used/processed personal data.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:processingAffectsPersonalDataVolume</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="affectsDatRangeScale">
+        <h3 id="1-affectsDatRangeScale">
+          <bdi class="secno"> </bdi>processing Affects Data Range Scale
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-affectsDatRangeScale"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Property to associate processing activity to the scale of the <em>ranges</em> of personal data
+                processed.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:processingAffectsDataRangeScale</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="hasDuration">
+        <h3 id="1-hasDuration">
+          <bdi class="secno"> </bdi>processingHasDuration
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-hasDuration"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Property to associate processing activity to its duration or permanence.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:processingHasDuration</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="hasFrequency">
+        <h3 id="1-hasFrequency">
+          <bdi class="secno"> </bdi>processingHasFrequency
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-hasFrequency"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Property to associate processing activity to its frequency.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:processingHasFrequency</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="hasGeographicalExtent">
+        <h3 id="1-hasGeographicalExtenty">
+          <bdi class="secno"> </bdi>processing Has Geographical Extent
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-hasGeographicalExtent"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Property to associate processing activity to its geographical extent.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:processingHasGeographicalExtent</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- <section id="Classes-largescaleProcessing">
+        <bdi class="secno"> </bdi>Classes
+        <a class="self-link" aria-label="§"
+          href="https://protect.oeg.fi.upm.es/gdpia/main.html#Classes-largescaleProcessing"></a> -->
+      <section id="ProcessingScale">
+        <h3 id="1-ProcessingScale">
+          <bdi class="secno"> </bdi>ProcessingScale
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-ProcessingScale"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Scale of the processing activity in general.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:ProcessingScale</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="DataSubjectScale">
+        <h3 id="1-DataSubjectScale">
+          <bdi class="secno"> </bdi>DataSubjectScale
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-DataSubjectScale"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Scale of data subjects affected by the processing activity.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:DataSubjectScale</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="PersonalDataVolume">
+        <h3 id="1-PersonalDataVolume">
+          <bdi class="secno"> </bdi>Personal Data Volume
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-PersonalDataVolume"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>The volume of data being processed.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:PersonalDataVolume</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="Duration">
+        <h3 id="1-Duration">
+          <bdi class="secno"> </bdi>Duration
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-Duration"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>The duration, or permanence, of the data processing activity.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:Duration</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="Frequency">
+        <h3 id="1-Frequency">
+          <bdi class="secno"> </bdi>Frequency
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-Frequency"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>The frequency of data processing activity.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:Frequency</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="geographicalExtent">
+        <h3 id="1-geographicalExtent">
+          <bdi class="secno"> </bdi>GeographicalExtent
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-geographicalExtent"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>The geographical extent of the processing activity.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:geographicalExtent</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/612048/en">WP29 Guidelines on Data Protection
+                  Officer 16/EN WP 243</a>,</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- </section> -->
+    </section>
+    <section id="sensitivedata">
+      <h3 id="1-sensitivedata">
+        <bdi class="secno"></bdi>Processing Sensitive Data
+        <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-sensitivedata"></a>
+      </h3>
+      <p>WP29 guideline on DPIA specifies 3 kinds of personal data which their processing may lead to high risk
+        to the rights and freedom of individuals:
+      <p class="indent">
+        1.Special categories of personal data mentioned in GDPR, Article 9 (such as health data, political belief,
+        sexual orientation, etc.).
+      </p>
+      <p class="indent">
+        2.Personal data associated to criminal convictions or offences as defined in GDPR, Article 10.
+      </p>
+      <p class="indent">
+        3.Personal data of highly personal nature, or as commonly known, <eemf>sensitiv</emf> data. These personal data
+          are considered sensitive as whether they strongly linked to the private activities (electronic
+          communications),
+          affect the exercise of fundamental rights, or their leak may have significant impact on individuals.
+      </p>
+      </p>
+      <section id="2-diagram">
+        <h3 id="2-diagram">
+          <bdi class="secno"> </bdi>Diagram
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#2-diagram"></a>
+        </h3>
+
+        <p>
+          Concepts associated with the sensitive data are represented below:
+        </p>
+        <center>
+          <img src="sensitivedata.png" alt="Concepts associated with Processing of sensitive data" width="500px">
+        </center>
+        </div>
+
+      </section>
+      <section id="PersonalData">
+        <h3 id="1-personaldata">
+          <bdi class="secno"> </bdi>Personal Data
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-personaldata"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Personal data being processed.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:PersonalData</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href=""></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="SensitiveData">
+        <h3 id="1-SensitiveData">
+          <bdi class="secno"> </bdi>Sensitive Data
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-SensitiveData"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Sensitive data includes special category of data, criminal convictions and offences, as well as data
+                with highly
+                personal nature such as electronic communication which its confidentiality should be protected.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:SensitiveData</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href=""></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="SpecialCategoryOfData">
+        <h3 id="1-SpecialCategoryOfData">
+          <bdi class="secno"> </bdi>Special Category of Data
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-SpecialCategoryOfData"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Special categories of personal data mentioned in GDPR, Article 9(1) which their processing is
+                prohibited unless in cases
+                mentioned in Article 9(2).</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:SpecialCategoryOfData</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://eur-lex.europa.eu/eli/reg/2016/679/art_9/par_1/oj">GDPR, Art.9(1)</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="CriminalConvictionsOffences">
+        <h3 id="1-CriminalConvictionsOffences">
+          <bdi class="secno"> </bdi>Criminal Convictions or Offences
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-CriminalConvictionsOffences"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Personal data relating to criminal convictions and offences.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:CriminalConvictionsOffences</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://eur-lex.europa.eu/eli/reg/2016/679/art_10/oj">GDPR, Art.10</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+    <!--  -->
+    <section id="affectingvolnurabledatasubject">
+      <h3 id="1-affectingvolnurabledatasubject">
+        <bdi class="secno"></bdi>Processing affecting Vulnerable Data subjects
+        <a class="self-link" aria-label="§"
+          href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-affectingvolnurabledatasubject"></a>
+      </h3>
+      <p>
+      </p>
+      <section id="3-diagram">
+        <h3 id="3-diagram">
+          <bdi class="secno"> </bdi>Diagram
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#3-diagram"></a>
+        </h3>
+
+        <p>
+          Concepts associated with the processing operations affecting vulnerable data subjects are represented below:
+        </p>
+        <center>
+          <img src="vulnerableds.png" alt="Concepts associated with processing affecting vulnerable data subjects "
+            width="500px">
+        </center>
+        </div>
+
+      </section>
+      <section id="VulnerableDataSubjects">
+        <h3 id="1-VulnerableDataSubjects">
+          <bdi class="secno"> </bdi>Vulnerable Data Subject
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-VulnerableDataSubjects"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Data subjects who considered to be vulnerable.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:VulnerableDataSubjects</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href=""></a>GDPR, Recital 75</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="SubjectControllerRelationship">
+        <h3 id="1-SubjectControllerRelationship">
+          <bdi class="secno"> </bdi>Subject-Controller Relationship
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-SubjectControllerRelationship"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Type of relation between data subject and data controller
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:SubjectControllerRelationship</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href=""></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="Child">
+        <h3 id="1-Child">
+          <bdi class="secno"> </bdi>Child
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-Child"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>A 'child' is a natural legal person who is below a certain legal age depending on the legal
+                jurisdiction.</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:Child</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="">GDPR, Recital 38</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="Employee">
+        <h3 id="1-Employee">
+          <bdi class="secno"> </bdi>Employee
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-Employee"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Employee</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:Employee</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/611236/en">Guidelines on Data Protection Impact
+                  Assessment (DPIA) and determining whether
+                  processing is “likely to result in a high risk” for the purposes of Regulation 2016/679</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="Patient">
+        <h3 id="1-Patient">
+          <bdi class="secno"> </bdi>Patient
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-Patient"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:Patient</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/611236/en">Guidelines on Data Protection Impact
+                  Assessment (DPIA) and determining whether
+                  processing is “likely to result in a high risk” for the purposes of Regulation 2016/679</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="AsylumSeeker">
+        <h3 id="1-AsylumSeeker">
+          <bdi class="secno"> </bdi>Asylum Seeker
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-AsylumSeeker"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>AsylumSeeker</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:AsylumSeeker</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/611236/en">Guidelines on Data Protection Impact
+                  Assessment (DPIA) and determining whether
+                  processing is “likely to result in a high risk” for the purposes of Regulation 2016/679</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="Elderly">
+        <h3 id="1-Elderly">
+          <bdi class="secno"> </bdi>Elderly
+          <a class="self-link" aria-label="§" href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-Elderly"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Elderly</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:Elderly</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/611236/en">Guidelines on Data Protection Impact
+                  Assessment (DPIA) and determining whether
+                  processing is “likely to result in a high risk” for the purposes of Regulation 2016/679</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="MentallyIllPerson">
+        <h3 id="1-MentallyIllPerson">
+          <bdi class="secno"> </bdi>Mentally Ill Person
+          <a class="self-link" aria-label="§"
+            href="https://protect.oeg.fi.upm.es/gdpia/main.html#1-MentallyIllPerson"></a>
+        </h3>
+        <table class="def propdef">
+          <tbody>
+            <tr>
+              <th>Definition:</th>
+              <td>Person with mental illness</td>
+            </tr>
+            <tr>
+              <th>Label:</th>
+              <td>gdpia:MentallyIllPerson</td>
+            </tr>
+            <tr>
+              <th>Source:</th>
+              <td><a href="https://ec.europa.eu/newsroom/article29/items/611236/en">Guidelines on Data Protection Impact
+                  Assessment (DPIA) and determining whether
+                  processing is “likely to result in a high risk” for the purposes of Regulation 2016/679.</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!--  -->
+    </section>
+  </section>
+</body>
+
+</html>
