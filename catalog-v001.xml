@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1632834561763" name="http://www.semanticweb.org/ranasaniei/ontologies/2021/4/untitled-ontology-42" uri="GDPIA.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1632834561763" name="http://www.semanticweb.org/ranasaniei/ontologies/2021/6/untitled-ontology-69" uri="dpia.owl"/>
+    </group>
+</catalog>
