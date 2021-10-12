@@ -12,9 +12,9 @@ import org.alicebot.ab.configuration.BotConfiguration;
 public class Main {
     public static void main(String []args)
     {
-        Bot alice = new Bot(BotConfiguration.builder().name("dpia").path("chat2\\src\\main\\resources").build());
+        Bot alice = new Bot(BotConfiguration.builder().name("dpia").path("src/main/resources").build());
         Chat chatSession = new Chat(alice);
-        String answer = chatSession.multisentenceRespond("I like Beethoven");
+        String answer = chatSession.multisentenceRespond("Beethoven is great");
         System.out.println(answer);
         answer = chatSession.multisentenceRespond("HELLO DPIA Assistant");
         System.out.println(answer);
