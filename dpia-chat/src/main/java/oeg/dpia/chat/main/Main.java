@@ -1,7 +1,12 @@
 package oeg.dpia.chat.main;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import org.alicebot.ab.AIMLProcessor;
 import org.alicebot.ab.Bot;
 import org.alicebot.ab.Chat;
+import org.alicebot.ab.MagicStrings;
+import org.alicebot.ab.PCAIMLProcessorExtension;
 import org.alicebot.ab.configuration.BotConfiguration;
 
 /**
@@ -10,14 +15,33 @@ import org.alicebot.ab.configuration.BotConfiguration;
  * @author vroddon
  */
 public class Main {
+    
+   
     public static void main(String []args)
     {
-        Bot alice = new Bot(BotConfiguration.builder().name("dpia").path("src/main/resources").build());
+        //The AIML file is in the src/main/resources/bots/aiml/dpia subfolder
+        MagicStrings.root_path = "src/main/resources";
+        AIMLProcessor.extension = new PCAIMLProcessorExtension();
+        Bot alice = new Bot("dpia");
         Chat chatSession = new Chat(alice);
-        String answer = chatSession.multisentenceRespond("Beethoven is great");
-        System.out.println(answer);
-        answer = chatSession.multisentenceRespond("HELLO DPIA Assistant");
-        System.out.println(answer);
+        System.out.println("Welcome to this chat.");
+        String answer="";
+        while(true)
+        {
+            try{
+                BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+                String input = reader.readLine();            
+                if (input.equals("exit"))
+                    break;
+                answer = chatSession.multisentenceRespond(input);
+                String question1 = chatSession.predicates.get("question1");
+                System.out.println(question1 + " - " + answer);
+            }catch(Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        
     }
     
 }
