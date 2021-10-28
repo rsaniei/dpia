@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1">
+
+   <category>
+      <pattern>yes</pattern>
+      <that>It may be of type high risk and need dpia to be done Continue to figure out</that>
+      <think><set name="question2">yes</set></think>
+      <template>What is the type of personal data you process</template>
+   </category>
+   
+   <category>
+      <pattern>^ <SET>SPECIALCATEGORIESDATA</SET> ^</pattern>
+      <that>WHAT IS THE TYPE OF PERSONAL DATA YOU PROCESS</that>
+      <think><set name="isSpecialCategoryOfData">yes</set></think>
+      <template>It includes specific categories of personal data</template>
+   </category>
+   
+   <category>
+      <pattern>^ <SET>SENSITIVEDATA</SET> ^</pattern>
+      <that>WHAT IS THE TYPE OF PERSONAL DATA YOU PROCESS</that>
+      <think><set name="isSensitiveData">yes</set></think>
+      <template>It includes sensitive categories of personal data</template>
+   </category>
+   
+   <category>
+      <pattern>*</pattern>
+      <that>WHAT IS THE TYPE OF PERSONAL DATA YOU PROCESS</that>
+      <template>What is the type of data subjects (e.g. the individuals the personal data belongs to)?</template>
+   </category>
+  
+</aiml>

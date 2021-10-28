@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1">
+
+   <category>
+      <pattern>START</pattern>
+      <template>Do you process any personal data during the processing operation</template>
+   </category>
+   <category>
+      <pattern>YES</pattern>
+      <that>Do you process any personal data during the processing operation</that>
+      <think><set name="question1">yes</set></think>
+      <template>It may be of type high risk and need dpia to be done Continue to figure out</template>
+   </category>
+   
+   <category>
+      <pattern>NO</pattern>
+      <that>DO YOU PROCESS ANY PERSONAL DATA DURING THE PROCESSING OPERATION</that>
+      <think><set name="question1">no</set></think>
+      <template>So no risk! thanks!</template>
+   </category>
+   <category>
+      <pattern>I DON'T KNOW</pattern>
+      <that>DO YOU PROCESS ANY PERSONAL DATA DURING THE PROCESSING OPERATION</that>
+      <template>let me give you the definition of personal data!</template>
+   </category>    
+   
+
+</aiml>
